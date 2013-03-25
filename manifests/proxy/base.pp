@@ -57,9 +57,10 @@ class puppet::proxy::base (
   }
 
   file {$ca_root:
-    ensure => directory,
-    owner  => 'puppet',
-    group  => 'root',
+    ensure  => directory,
+    owner   => 'puppet',
+    group   => 'root',
+    seltype => 'puppet_var_lib_t',
   }
 
 # TODO:
