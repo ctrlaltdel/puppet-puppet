@@ -13,4 +13,7 @@ class puppet::params {
   }
 
   $puppetca_cmd = "${puppetca_path}/${puppetca_bin}"
+
+  $confdir       = '/etc/puppet'
+  $puppet_vardir = '/var/lib/puppet'
 }
